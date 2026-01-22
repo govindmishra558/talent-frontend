@@ -79,7 +79,7 @@ export default function StudentDemoWithSubmitAndFeedback() {
   const fetchQuestions = async () => {
     setLoadingQuestions(true);
     try {
-      const res = await fetch('http://localhost:8080/api/demotest');
+      const res = await fetch('http://localhost:10000/api/demotest');
       const json = await res.json();
       if (json.success) {
         // ensure questions have type and correct_answer fields (backend should return them)
@@ -282,7 +282,7 @@ export default function StudentDemoWithSubmitAndFeedback() {
     };
 
     try {
-      const res = await fetch('http://localhost:8080/api/demo-submit', {
+      const res = await fetch('http://localhost:10000/api/demo-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

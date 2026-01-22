@@ -43,7 +43,7 @@ const StartExam = () => {
   /* ================= FETCH QUESTIONS ================= */
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/exam/${examCode}/questions?lang=${lang}`)
+      .get(`http://localhost:10000/api/exam/${examCode}/questions?lang=${lang}`)
       .then((res) => setQuestions(res.data.data || []))
       .catch(() => toast.error("Failed to load questions"));
   }, [examCode, lang]);
@@ -90,7 +90,7 @@ const StartExam = () => {
   /* ================= SUBMIT ================= */
   const submitExam = async (reason) => {
     try {
-      await axios.post("http://localhost:8080/api/exam/submit", {
+      await axios.post("http://localhost:10000/api/exam/submit", {
         exam_code: examCode,
         language_code: lang,
         candidate_name,
