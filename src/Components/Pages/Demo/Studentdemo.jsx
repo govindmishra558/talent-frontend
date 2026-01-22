@@ -282,7 +282,7 @@ export default function StudentDemoWithSubmitAndFeedback() {
     };
 
     try {
-      const res = await fetch('http://localhost:10000/api/demo-submit', {
+      const res = await fetch('https://talent-backend-i83x.onrender.com/api/demo-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

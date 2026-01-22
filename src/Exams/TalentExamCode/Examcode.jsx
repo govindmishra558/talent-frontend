@@ -18,11 +18,11 @@ const Examcode = () => {
       setLoading(true);
 
       await axios.get(
-        `http://localhost:10000/api/exam/${examCode.trim()}`
+        `https://talent-backend-i83x.onrender.com/api/exam/${examCode.trim()}`
       );
 
       const scheduledRes = await axios.get(
-        `http://localhost:10000/api/scheduled-exam/${examCode.trim()}`
+        `https://talent-backend-i83x.onrender.com/api/scheduled-exam/${examCode.trim()}`
       );
 
       localStorage.setItem(

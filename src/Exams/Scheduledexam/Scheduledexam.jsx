@@ -20,7 +20,7 @@ const ScheduledExam = () => {
   /* FETCH EXAM */
   useEffect(() => {
     axios
-      .get(`http://localhost:10000/api/scheduled-exam/${examCode}`)
+      .get(`https://talent-backend-i83x.onrender.com/api/scheduled-exam/${examCode}`)
       .then((res) => setExam(res.data.data))
       .catch(() => alert("Failed to load exam details"));
   }, [examCode]);
