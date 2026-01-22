@@ -18,7 +18,7 @@ import Video from "./Components/Pages/Video/Video.jsx";
 import Customization from "./Components/Pages/Customization/Customization.jsx";
 import Dedicatedassessment from "./Components/Pages/Dedicatedassessment/Dedicatedassessment.jsx";
 import AssessmentLibrary from "./Components/Pages/AssessmentLibrary/AssessmentLibrary.jsx";
-import Studentdemo from "./Components/Pages/Demo/studentdemo.jsx";
+import Studentdemo from "./Components/Pages/Demo/Studentdemo.jsx";
 
 // ✅ NEW: Exam Start Page
 import Examcode from "./Exams/TalentExamCode/Examcode.jsx";
