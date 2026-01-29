@@ -25,6 +25,7 @@ import Scheduledexam from "./Exams/Scheduledexam/Scheduledexam.jsx";
 import StartExam from "./Exams/Startexam/StartExam.jsx";
 import SuccessPage from "./Exams/SuccessPage/SuccessPage.jsx";
 import Studentdemo from "./Components/Pages/Studentdemo/Studentdemo.jsx";
+import AttendancePage from "./Exams/Attendance/Attendence.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -71,6 +72,9 @@ const App = () => {
       <Route path="/startexam/:examCode" element={<StartExam/>}/>
 
       <Route path="/successPage" element={<SuccessPage/>}/>
+
+              <Route path="/Attendence" element={<AttendancePage/>} />
+
 
 
       </Routes>

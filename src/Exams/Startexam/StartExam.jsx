@@ -43,7 +43,7 @@ const StartExam = () => {
   /* ================= FETCH QUESTIONS ================= */
   useEffect(() => {
     axios
-      .get(`https://talent-backend-i83x.onrender.com/api/exam/${examCode}/questions?lang=${lang}`)
+      .get(`http://localhost:8080/api/exam/${examCode}/questions?lang=${lang}`)
       .then((res) => setQuestions(res.data.data || []))
       .catch(() => toast.error("Failed to load questions"));
   }, [examCode, lang]);

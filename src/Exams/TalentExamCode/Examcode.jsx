@@ -18,11 +18,11 @@ const Examcode = () => {
       setLoading(true);
 
       await axios.get(
-        `https://talent-backend-i83x.onrender.com/api/exam/${examCode.trim()}`
+        `http://localhost:8080/api/exam/${examCode.trim()}`
       );
 
       const scheduledRes = await axios.get(
-        `https://talent-backend-i83x.onrender.com/api/scheduled-exam/${examCode.trim()}`
+        `http://localhost:8080/api/scheduled-exam/${examCode.trim()}`
       );
 
       localStorage.setItem(
@@ -33,7 +33,8 @@ const Examcode = () => {
       message.success("Exam verified! Redirecting...");
 
       setTimeout(() => {
-        navigate(`/scheduledexam/${examCode.trim()}`);
+        // navigate(`/scheduledexam/${examCode.trim()}`);
+        navigate('/Attendence')
       }, 2000);
     } catch (error) {
       message.error("Invalid or unscheduled exam code");
