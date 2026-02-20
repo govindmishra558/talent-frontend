@@ -7,6 +7,7 @@ import "./Customization.css";
 import Cardcomponent from "../../Reusablecomponents/Cardcomponent/Cardcomponent";
 import Testimonial from "../../Reusablecomponents/Testimonial/Testimonial";
 import Getdemo from "../../Reusablecomponents/Getdemo/Getdemo";
+import Reportcards from "../../Reusablecomponents/Reportcards/Reportcards";
 
 const Customization = () => {
   const simulationSkillsData = [
@@ -65,107 +66,50 @@ const Customization = () => {
           <div>
             <p>
               Standardized assessments don't fit every role. With TSA, you can
-              design custom pre-employment testing solutions to measure the skills
-              that truly matter for your industry, team, and organizational goals
-              — ensuring every hire is the right fit.
+              design custom pre-employment testing solutions to measure the
+              skills that truly matter for your industry, team, and
+              organizational goals — ensuring every hire is the right fit.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Custom Tests Section */}
-      <section className="custom-tests-section">
-        <div className="container-fluid px-4">
-          <div className="row align-items-center justify-content-center">
-            {/* Left Image Section */}
-            {/* <div className="col-lg-6 col-md-8 col-12 order-2 order-lg-1 text-center mb-4 mb-lg-0">
-              <img
-                src={Customizable}
-                alt="Custom Tests"
-                className="custom-image mx-auto d-block"
-              />
-            </div> */}
-
-            {/* Right Content Section */}
-            <div className="col-lg-6 col-12 order-1 order-lg-2 ps-lg-5">
-              {/* Tag */}
-              <div className="tag-badge">
-                <span className="tag-text">Custom Tests</span>
-              </div>
-
-              {/* Title */}
-              <h2 className="main-title">
-                <span className="gradient-text">Personalized Assessments</span>
-                <br />
-                <span className="text-dark">Built for Your Hiring Goals</span>
-              </h2>
-
-              {/* Description */}
-              <p className="description-text">
-                TSA gives you the flexibility to design assessments that reflect
-                the exact skills, knowledge, and qualities you want in a
-                candidate. From ready-made test banks to fully tailored
-                evaluations, you stay in control of the hiring process.
-              </p>
-
-              {/* Feature List */}
-              <div className="features-container">
-                <div className="feature-item">
-                  <div className="feature-icon icon-blue">📚</div>
-                  <div className="feature-content">
-                    <h4 className="feature-title">
-                      Leverage Ready-Made Libraries
-                    </h4>
-                    <p className="feature-description">
-                      Access hundreds of pre-built tests to quickly evaluate
-                      candidates across industries and roles.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon icon-purple">🎯</div>
-                  <div className="feature-content">
-                    <h4 className="feature-title">
-                      Target Role-Specific Competencies
-                    </h4>
-                    <p className="feature-description">
-                      Build custom assessments that focus on the exact technical
-                      or soft skills your job demands.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon icon-green">🛠️</div>
-                  <div className="feature-content">
-                    <h4 className="feature-title">
-                      Incorporate Your Own Content
-                    </h4>
-                    <p className="feature-description">
-                      Add company-specific questions and scenarios to align
-                      tests with your unique workflows.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon icon-orange">⚖️</div>
-                  <div className="feature-content">
-                    <h4 className="feature-title">
-                      Set the Right Challenge Level
-                    </h4>
-                    <p className="feature-description">
-                      Adjust question difficulty, test duration, and focus areas
-                      to match different roles and seniority levels.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Reportcards
+        tagText="Custom Tests"
+        titleHighlight="Personalized Assessments"
+        titleNormal="Built for Your Hiring Goals"
+        description="TSA gives you the flexibility to design assessments that reflect the exact skills, knowledge, and qualities you want in a candidate. From ready-made test banks to fully tailored evaluations, you stay in control of the hiring process."
+        features={[
+          {
+            icon: "📚",
+            iconColor: "blue",
+            title: "Leverage Ready-Made Libraries",
+            description:
+              "Access hundreds of pre-built tests to quickly evaluate candidates across industries and roles.",
+          },
+          {
+            icon: "🎯",
+            iconColor: "black",
+            title: "Target Role-Specific Competencies",
+            description:
+              "Build custom assessments that focus on the exact technical or soft skills your job demands.",
+          },
+          {
+            icon: "🛠️",
+            iconColor: "red",
+            title: "Incorporate Your Own Content",
+            description:
+              "Add company-specific questions and scenarios to align tests with your unique workflows.",
+          },
+          {
+            icon: "⚖️",
+            iconColor: "green",
+            title: "Set the Right Challenge Level",
+            description:
+              "Adjust question difficulty, test duration, and focus areas to match different roles and seniority levels.",
+          },
+        ]}
+      />
 
       {/* Dynamic Question Formats Section */}
       <section className="dynamic-formats-section">
@@ -197,19 +141,19 @@ const Customization = () => {
           <Link to="/simulation" style={{ textDecoration: "none" }}>
             <button className="cta-button">
               <span>Learn More</span>
-              <svg 
-                className="arrow-icon" 
-                width="20" 
-                height="20" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="arrow-icon"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
             </button>
@@ -225,7 +169,10 @@ const Customization = () => {
           </div>
           <div>
             <p>
-              Transform pre-employment testing into a branding advantage with TSA's customized talent assessments. From the look and feel of your assessment pages to candidate communications, you can craft a hiring experience that reflects your brand and stands out.
+              Transform pre-employment testing into a branding advantage with
+              TSA's customized talent assessments. From the look and feel of
+              your assessment pages to candidate communications, you can craft a
+              hiring experience that reflects your brand and stands out.
             </p>
           </div>
           <div>

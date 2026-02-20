@@ -32,7 +32,7 @@ const Topbar = () => {
                 Assessment Taker Resources
               </a>
             </li>
-            
+
             <li>
               <a href="#" role="button">
                 Client Login
@@ -139,11 +139,11 @@ const Navbare = () => {
                             Proctoring
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link to="/TestDigitization" onClick={handleNavClick}>
                             Test Digitization
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link to="/Security" onClick={handleNavClick}>
                             Security & Compliance
@@ -186,28 +186,6 @@ const Navbare = () => {
                         </li>
                       </ul>
                     </div>
-
-                    {/* 🖥️ Platform Overview */}
-                    <div className="col-lg-3 col-md-6 col-12">
-                      <h6 className="dropdown-header">Platform Overview</h6>
-                      <div className="mt-2">
-                        <Link
-                          to="/LearnMore"
-                          className="learn-more-link text-decoration-none"
-                          style={{
-                            fontSize: "20px",
-                            backgroundColor: "blue",
-                            color: "white",
-                            padding: "6px 12px",
-                            borderRadius: "6px",
-                            display: "inline-block",
-                          }}
-                          onClick={handleNavClick}
-                        >
-                          Learn More →
-                        </Link>
-                      </div>
-                    </div>
                   </div>
                 </Container>
               </NavDropdown>
@@ -225,48 +203,115 @@ const Navbare = () => {
                 <Container style={{ width: "530px" }}>
                   <div className="row p-3">
                     <div className="col-6">
-                      <NavDropdown.Item onClick={handleNavClick}>
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/Manufacturing"
+                        onClick={handleNavClick}
+                      >
                         Manufacturing
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/Healthcare"
+                        onClick={handleNavClick}
+                      >
                         Healthcare
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/Construction"
+                        onClick={handleNavClick}
+                      >
                         Construction
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/FinancialServices"
+                        onClick={handleNavClick}
+                      >
                         Financial Services
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/Education"
+                        onClick={handleNavClick}
+                      >
                         Education
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/CallCenters"
+                        onClick={handleNavClick}
+                      >
                         Call Centers
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+                      
+                      <NavDropdown.Item
+                      as={Link}
+                      to="/Retail"
+                      >
                         Retail
-                      </NavDropdown.Item>
+                        </NavDropdown.Item>
                     </div>
                     <div className="col-6">
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/FederalState"
+                      onClick={handleNavClick}
+                      >
                         Federal, State & Local Government
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item
+                      as={Link}
+                      to="/Engineering"
+                      onClick={handleNavClick}
+                      >
                         Engineering
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item 
+                      as={Link}
+                      to="/UtilitiesEnergy"
+                      onClick={handleNavClick}
+                      >
                         Utilities/Energy
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+                      
+                      <NavDropdown.Item 
+                      as={Link}
+                      to="/Transport"
+                      onClick={handleNavClick}
+                      >
                         Transportation and Logistics
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item 
+                      as={Link}
+                      to="/Staffing"
+                      onClick={handleNavClick}
+                      >
                         Staffing
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+
+                      <NavDropdown.Item 
+                      as={Link}
+                      to="/Hospitality"
+                      onClick={handleNavClick}
+                      >
                         Hospitality
                       </NavDropdown.Item>
-                      <NavDropdown.Item onClick={handleNavClick}>
+                      <NavDropdown.Item 
+                      as={Link}
+                      to="/LegalServices"
+                      onClick={handleNavClick}
+                      >
                         Legal Services
                       </NavDropdown.Item>
                     </div>
@@ -326,13 +371,14 @@ const Navbare = () => {
 
               {/* BUTTONS */}
               <div className="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 ms-lg-3">
-               <Link to="/examcode"
-  className="custom-button"
-  onClick={handleNavClick}
-  style={{ color: "black", textDecoration: "none" }}
->
-  Take Your Test
-</Link>
+                <Link
+                  to="/examcode"
+                  className="custom-button"
+                  onClick={handleNavClick}
+                  style={{ color: "black", textDecoration: "none" }}
+                >
+                  Take Your Test
+                </Link>
 
                 <Button
                   variant="outline-primary"

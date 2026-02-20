@@ -35,12 +35,7 @@ const Assesmentreuse = ({
             
             {description && <p className="assessment-description">{description}</p>}
             
-            {buttonText && (
-              <button className="demo-btn">
-                {buttonText}
-                <span className="btn-arrow">→</span>
-              </button>
-            )}
+           
           </div>
 
           {/* Right Content (Image) */}

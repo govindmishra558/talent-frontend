@@ -5,7 +5,7 @@ const Learnmore = ({
   smallHeading, 
   mainHeading, 
   description, 
-  buttonText, 
+  // buttonText, 
 //   onButtonClick 
 }) => {
   return (
@@ -13,7 +13,7 @@ const Learnmore = ({
       <h2>{smallHeading}</h2>
       <h1>{mainHeading}</h1>
       <p>{description}</p>
-      <button>{buttonText}</button>
+      {/* <button>{buttonText}</button> */}
     </div>
   );
 };

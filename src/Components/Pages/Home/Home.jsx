@@ -387,9 +387,9 @@ const Home = () => {
           ))}
         </div>
 
-        <button className="demo-button">
+        {/* <button className="demo-button">
           Get a Demo
-        </button>
+        </button> */}
       </div>
     </section>
 

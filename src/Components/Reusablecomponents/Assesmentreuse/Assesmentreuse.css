@@ -174,7 +174,7 @@
   }
 }
 
-.image-wrapper {
+/* .image-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
@@ -187,7 +187,23 @@
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+} */
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.assessment-image {
+  width: 100%;
+  max-width: 600px;   /* control size */
+  height: auto;
+  object-fit: contain;
+}
+
 
 .assessment-image:hover {
   transform: scale(1.05);
