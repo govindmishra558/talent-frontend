@@ -2,6 +2,8 @@ import React from 'react';
 import "./footer.css";
 import imgage from "../../../../src/images/logo2.png";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -51,13 +53,27 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Platform Overview</h4>
               <ul>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Assessment Types</a></li>
-                <li><a href="#">Question Types</a></li>
-                <li><a href="#">Processing</a></li>
-                <li><a href="#">Security & Compliance</a></li>
-                <li><a href="#">Reporting</a></li>
-                <li><a href="#">APIs and Automotive Exports</a></li>
+                {/* <li><a href="#">Construction</a></li> */}
+                <Link to="/assessmenttypes">
+                <li><a>Assessment Types</a></li>
+                </Link>
+                <Link to="/QuestionStyles">
+                <li><a>Question Types</a></li>
+                </Link>
+                <Link to="/skills">
+                <li><a>Skills</a></li>
+                </Link>
+                <Link to="/Cognitive">
+                <li><a>Cognitive</a></li>
+                </Link>
+                <Link to="/Security">
+                <li><a>Security & Compliance</a></li>
+                </Link>
+
+                <Link to="/Reporting">
+                <li><a>Reporting</a></li>
+                </Link>
+                {/* <li><a href="#">APIs and Automotive Exports</a></li> */}
               </ul>
             </div>
 
@@ -65,13 +81,14 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Industries</h4>
               <ul>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Integrations</a></li>
-                <li><a href="#">Assessment Library</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Administration Options</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <Link to="/Construction">
+                <li><a>Construction</a></li>
+                </Link>
+                
+
+                <Link to="/AssessmentLibrary">
+                <li><a>Assessment Library</a></li>
+                </Link>
               </ul>
             </div>
 
@@ -79,9 +96,9 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Resources</h4>
               <ul>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a>Resources</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
           </div>
